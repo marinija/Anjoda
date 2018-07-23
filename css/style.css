@@ -3,7 +3,7 @@
 /*----------- Main Colors ----------------- */
 
 :root {
-    --background-color: #66c7ff;
+    --background-color: #2980b9;
 }
 
 /* ---- Fonts Load -------- */
@@ -41,11 +41,16 @@ figure {
     box-shadow: 0 9px 7px -5px #76cdff;
 }
 
+.navbar-brand img {
+    height: 100px;
+}
+
 .fixed-top {
     background-color: var(--background-color);
     width: 100%;
     padding: 0 5rem;
 }
+
 
 .fixed-top img {
     height: 40px;
@@ -96,12 +101,12 @@ figure {
 .contact-us .btn-primary {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
-    background-color: #0054ff;
+    background-color: #e67e22;
     padding: .6rem 1rem;
 }
 
 .contact-us .btn-primary:hover {
-    background-color: #1562fd;
+    background-color: #d35400;
 }
 
 /* ------------- Team Section ----------------- */
@@ -149,9 +154,19 @@ figure {
 	margin: 0px 16px;
 }
 
+.photo-galery {
+    width: 100%;
+    overflow: hidden;
+}
+
 .out-team img {
     height: 170px;
     width: 100%;
+    transition: .5s ease;
+}
+
+.photo-galery img:hover {
+    transform: scale(1.08);
 }
 
 .out-team .text-description {
@@ -257,5 +272,9 @@ footer {
     .slick-slider img {
     height: 40px;
     width: 40px;
+    }
+    
+    .banner img {
+        height: 50vh;
     }
 }
