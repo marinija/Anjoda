@@ -127,6 +127,16 @@ figure {
 }
 
 /* ------------- Our Team ----------------- */
+#our-work h6,
+p {
+    color: #3e4646;
+}
+
+#our-work p {
+    font-size: .9rem;
+}
+
+
 .hr-sect {
 	display: -webkit-box;
 	display: -ms-flexbox;
