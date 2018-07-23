@@ -172,10 +172,12 @@ p {
 .out-team img {
     height: 170px;
     width: 100%;
+    -webkit-transition: .5s ease;
     transition: .5s ease;
 }
 
 .photo-galery img:hover {
+    -webkit-transform: scale(1.08);
     transform: scale(1.08);
 }
 
@@ -194,17 +196,23 @@ p {
 
 
 .slick-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
 .slick-slider img {
     height: 100px;
     width: 100px;
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
 .slick-slider img:hover {
+    -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
 
