@@ -1,5 +1,5 @@
 $(function () {
-    
+
     /* -------- Fixed navbar ------------*/
     $(document).scroll(function () {
         var scroll = $(this).scrollTop();
@@ -10,6 +10,7 @@ $(function () {
             $('.navbar').removeClass('fixed-top');
         }
     });
+    
     /* Smooth scrolling */
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
@@ -45,11 +46,21 @@ $(function () {
                 }
             }
         });
-    
+
     /* Contact button animate scroll */
-    $('#contact-today').click(function(){
+    $('#contact-today').click(function () {
         $("html, body").animate({
             scrollTop: $('#contact').offset().top
-        }, 800);
+        }, 1000);
     });
+    
+    /* ----------- slick slider configuration --------------- */
+    $('.my-logos').slick({
+        slidesToShow: 6,
+          slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+    });
+     
 })
+   

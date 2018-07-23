@@ -25,6 +25,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+figure {
+    margin-bottom: 0;
+}
+
 .team p {
     line-height: 1.8rem;
 }
@@ -158,6 +162,31 @@ p {
     margin-bottom: 0 !important;
 }
 
+/* ------------- Logos Images --------------------- */
+.our-tech {
+    background-color: var(--background-color);
+}
+
+
+.slick-slider {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slick-slider img {
+    height: 100px;
+    width: 100px;
+    filter: grayscale(100%);
+}
+
+.slick-slider img:hover {
+    filter: grayscale(0);
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
 /* ---------- Footer ------------ */
 footer {
     background-color: #eeeeee;
@@ -223,5 +252,10 @@ footer {
     }
     .fixed-top {
          padding: 0 2rem;   
+    }
+    
+    .slick-slider img {
+    height: 40px;
+    width: 40px;
     }
 }
