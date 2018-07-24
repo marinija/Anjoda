@@ -61,6 +61,8 @@ figure {
     height: 40px;
 }
 
+
+
 .navbar-nav li {
     font-family: 'Roboto', sans-serif;
     margin-right: 20px;
@@ -126,6 +128,16 @@ button:focus {
     50% {
         transform: translateY(-15px) rotate(45deg);
     }
+}
+
+.fixed-top li a {
+    color: #fff !important;
+}
+
+.fixed-top li a:hover {
+    color: #d3d3d3 !important;
+    opacity: 0.8;
+    border-bottom: none;
 }
 
 /* ------------- contact us  ---------------- */
