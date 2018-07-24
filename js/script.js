@@ -53,6 +53,11 @@ $(function () {
             scrollTop: $('#contact').offset().top
         }, 1000);
     });
+    $('.myarrow-down').click(function () {
+        $("html, body").animate({
+            scrollTop: $('.contact-us').offset().top
+        }, 1000);
+    });
     
     /* ----------- slick slider configuration --------------- */
     $('.my-logos').slick({
