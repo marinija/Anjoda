@@ -66,6 +66,27 @@ $(function () {
               autoplay: true,
               autoplaySpeed: 2000,
     });
-     
+    
+/* ------------------- Filtering items adding active class --------------- */
+	$(".filterListItem").on('click',function(){
+		$(".filterListItem").removeClass("active");
+		$(this).addClass("active");
+	});
+    //    /* ------------ Filtering items -------------- */
+      $(".filter-button").click(function(){
+        const value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
 })
    

@@ -35,7 +35,6 @@ figure {
 
 /* ----------- Navigation --------------- */
 
-
 .nagivation {
     background-image: url(../images/cover-2.jpg);
     background-size: cover;
@@ -77,7 +76,7 @@ figure {
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 252, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 252, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
@@ -169,6 +168,7 @@ button:focus {
 .contact-us .btn-primary:active {
     background-color: #d35400;
 }
+
 .contact-us .btn-primary:not(:disabled):not(.disabled):active {
     background-color: #d35400;
 }
@@ -191,6 +191,7 @@ button:focus {
 }
 
 /* ------------- Our Team ----------------- */
+
 #our-work h6,
 p {
     color: #3e4646;
@@ -200,32 +201,84 @@ p {
     font-size: .9rem;
 }
 
+.categories-app {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.categories-app li {
+    padding: .3rem 3rem;
+}
+
+
+.categories-app li button {
+    border: none;
+    border-radius: 0;
+    outline: inherit;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.categories-app li.active {
+    background-color: var(--background-color);
+}
+
+.gallery_product {
+    margin-bottom: 30px;
+}
+
+.gallery-title {
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.categories-app .filter-button:active {
+    background-color: var(--background-color);
+}
 
 .hr-sect {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-preferred-size: 100%;
-	flex-basis: 100%;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	color: #2c2c2c;
-	font-size: 1.9rem;
-	margin: 8px 0px;
-   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #2c2c2c;
+    font-size: 1.9rem;
+    margin: 8px 0px;
+
 }
+
 .hr-sect::before,
 .hr-sect::after {
-	content: "";
-	-webkit-box-flex: 1;
-	-ms-flex-positive: 1;
-	flex-grow: 1;
-	background: rgba(0, 0, 0, 0.6);
-	height: 1px;
-	font-size: 0px;
-	line-height: 0px;
-	margin: 0px 16px;
+    content: "";
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.6);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
 }
 
 .photo-galery {
@@ -254,6 +307,7 @@ p {
 }
 
 /* ------------- Logos Images --------------------- */
+
 .our-tech {
     background-color: var(--background-color);
 }
@@ -280,11 +334,13 @@ p {
     filter: grayscale(0);
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
     display: none !important;
 }
 
 /* ---------- Footer ------------ */
+
 footer {
     background-color: #eeeeee;
 }
@@ -319,6 +375,7 @@ footer {
 }
 
 /* --------------- Copyright ----------------- */
+
 .copyright {
     background-color: var(--background-color);
     font-size: 1.3rem;
@@ -327,8 +384,14 @@ footer {
 
 
 /* ----------- media query --------------- */
+
 @media (max-width: 768px) {
-    .nagivation  {
+    .categories-app {
+        display: block;
+        text-align: center;
+
+    }
+    .nagivation {
         background-attachment: inherit;
         background-image: url(../images/cover-mob.jpg);
     }
@@ -339,7 +402,7 @@ footer {
         height: 140px;
         margin-bottom: 30px;
     }
-    
+
     .contact-us h2 {
         font-size: 1.3rem;
         line-height: 1.8rem;
@@ -347,19 +410,19 @@ footer {
     p {
         font-size: 0.96rem;
     }
-    
+
     .navbar-brand img {
         height: 40px;
     }
     .fixed-top {
-         padding: 0 2rem;   
+        padding: 0 2rem;
     }
-    
+
     .slick-slider img {
-    height: 40px;
-    width: 40px;
+        height: 40px;
+        width: 40px;
     }
-    
+
     .banner img {
         height: 50vh;
     }
