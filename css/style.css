@@ -115,7 +115,9 @@ i {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    -webkit-animation: icon-animation 1s;
     animation: icon-animation 1s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
@@ -123,8 +125,16 @@ button:focus {
     outline: inherit;
 }
 
+@-webkit-keyframes icon-animation {
+    50% {
+        -webkit-transform: translateY(-15px) rotate(45deg);
+        transform: translateY(-15px) rotate(45deg);
+    }
+}
+
 @keyframes icon-animation {
     50% {
+        -webkit-transform: translateY(-15px) rotate(45deg);
         transform: translateY(-15px) rotate(45deg);
     }
 }
@@ -203,7 +213,11 @@ p {
 
 .categories-app {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
 }
