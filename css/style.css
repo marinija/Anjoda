@@ -3,7 +3,7 @@
 /*----------- Main Colors ----------------- */
 
 :root {
-    --background-color: #2980b9;
+    --background-color: #0A3AF5;
 }
 
 /* ---- Fonts Load -------- */
@@ -404,6 +404,10 @@ footer {
     font-family: 'Lato', sans-serif;
 }
 
+.copyright p {
+    color: #d3d3d3;
+}
+
 /* ------------- Back to top button ---------------- */
 #back-to-top {
     position: fixed;
@@ -443,7 +447,7 @@ footer {
     }
     .nagivation {
         background-attachment: inherit;
-        background-image: url(../images/cover-mob.jpg);
+        background-image: url(../images/background-mob.jpg);
     }
     .team img {
         display: block;
