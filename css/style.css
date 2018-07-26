@@ -385,6 +385,10 @@ footer {
     margin-right: 0;
 }
 
+.social-links .navbar-nav li a:hover {
+    border-bottom: none;
+}
+
 .footer-text p {
     margin: 0;
     font-size: 1.1rem;
@@ -478,5 +482,9 @@ footer {
 @media (max-width: 600px) {
     .navbar-toggler {
         background-color: var(--background-color);
+    }
+     .contact-us h2 {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
     }
 }

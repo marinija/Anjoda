@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="vendors/css/slick.css">
     <link rel="stylesheet" href="vendors/css/lightbox.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -59,10 +60,10 @@
         <main class="contact-us">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-7 col-lg-9 py-3 py-lg-5">
+                    <div class="col-12 col-md-7 col-lg-9 py-2 py-lg-5">
                         <h2>We're giving 101% out of 100% Because we have passion for things that we do.</h2>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-3 py-3 py-lg-5 text-center text-lg-right ">
+                    <div class="col-12 col-md-5 col-lg-3 py-2 py-lg-5 text-center text-lg-right ">
                         <button class="btn btn-primary text-uppercase mt-0 mt-md-2" id="contact-today">Contact Us Today</button>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
     <section class="team py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4" id="davor">
                     <div class="row">
                         <div class="col-12 col-md-5">
                             <img src="images/davor.jpg" alt="Davor" class="rounded-circle">
@@ -84,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4" id="angela">
                     <div class="row">
                         <div class="col-12 col-md-5">
                             <img src="images/angela.jpg" alt="Angela" class="rounded-circle">
@@ -95,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4" id="joco">
                     <div class="row">
                         <div class="col-12 col-md-5">
                             <img src="images/jovica.jpg" alt="Jovica" class="rounded-circle">
@@ -108,6 +109,7 @@
                 </div>
             </div>
         </div>
+        <div class="showOurWork"></div>
     </section>
 
     <!-- Our Team Section -->
@@ -115,70 +117,70 @@
     <div class="hr-sect">Our Work</div>
 
     <section id="our-work" class="out-team py-5">
-        <div class="container">
-            <ul class="categories-app filterList">
-                <li data-filter="all" class="filter-button active filterListItem"><button>All</button></li>
-                <li data-filter="1" class="filter-button filterListItem"><button>Web Development</button></li>
-                <li data-filter="2" class="filter-button filterListItem"><button>Windows Application</button></li>
-                <li data-filter="3" class="filter-button filterListItem"><button>Photo Editing</button></li>
-            </ul>
-            <div class="row mt-0 mt-lg-4">
-                <div class="col-12 col-md-4 gallery_product filter 1">
-                    <div class="photo-galery">
-                        <a href="images/davor-portfolio.png" data-lightbox="roadtrip" data-title="Davor M. Portfolio Website Showing all his previous projects that he have worked on. Website: https://marinija.github.io/davor-mihajleski/"><img src="images/davor-thumb.jpg" alt="Davor Portfolio Site" class="img-fluid"></a>
+            <div class="container">
+                <ul class="categories-app filterList">
+                    <li data-filter="all" class="filter-button active filterListItem"><button>All</button></li>
+                    <li data-filter="1" class="filter-button filterListItem"><button>Web Development</button></li>
+                    <li data-filter="2" class="filter-button filterListItem"><button>Windows Application</button></li>
+                    <li data-filter="3" class="filter-button filterListItem"><button>Photo Editing</button></li>
+                </ul>
+                <div class="row mt-0 mt-lg-4">
+                    <div class="col-12 col-md-4 gallery_product filter 1">
+                        <div class="photo-galery">
+                            <a href="images/davor-portfolio.png" data-lightbox="roadtrip" data-title="Davor M. Portfolio Website Showing all his previous projects that he have worked on. Website: https://marinija.github.io/davor-mihajleski/"><img src="images/davor-thumb.jpg" alt="Davor Portfolio Site" class="img-fluid"></a>
+                        </div>
+                        <div class="text-center text-description py-3">
+                            <h6>Website &amp; Web Design </h6>
+                            <p>HTML5, CSS3, Vanilla Javascript, jQuery</p>
+                        </div>
                     </div>
-                    <div class="text-center text-description py-3">
-                        <h6>Website &amp; Web Design </h6>
-                        <p>HTML5, CSS3, Vanilla Javascript, jQuery</p>
+                    <div class="col-12 col-md-4 gallery_product filter 1">
+                        <div class="photo-galery">
+                            <a href="images/equityupnew.png" data-lightbox="roadtrip" data-title="Build by Davor using Angular 5 and PHP7 + MYSQL. Website: https://equityup.io/"><img src="images/equityup%20thumb.jpg" alt="Equityup" class="img-fluid"></a>
+                        </div>
+                        <div class="text-center text-description py-3">
+                            <h6>Web Aplication</h6>
+                            <p>Angular5, HTML5, CSS3, jQuery, Typescript, PHP7</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4 gallery_product filter 1">
-                    <div class="photo-galery">
-                        <a href="images/equityupnew.png" data-lightbox="roadtrip" data-title="Build by Davor using Angular 5 and PHP7 + MYSQL. Website: https://equityup.io/"><img src="images/equityup%20thumb.jpg" alt="Equityup" class="img-fluid"></a>
+                    <div class="col-12 col-md-4 gallery_product filter 2">
+                        <div class="photo-galery">
+                            <a href="images/angela-project2.jpg" data-lightbox="roadtrip" data-title="Car Sales c# application with charts and filtering by product and seller for countries in Europe."><img src="images/angela-project2.jpg" alt="Angela M" class="img-fluid"></a>
+                        </div>
+                        <div class="text-center text-description py-3">
+                            <h6>Excel Dashboard</h6>
+                            <p>Excel, Macros, VBA</p>
+                        </div>
                     </div>
-                    <div class="text-center text-description py-3">
-                        <h6>Web Aplication</h6>
-                        <p>Angular5, HTML5, CSS3, jQuery, Typescript, PHP7</p>
+                    <div class="col-12 col-md-4 gallery_product filter 2">
+                        <div class="photo-galery">
+                            <a href="images/angela-project2.jpg" data-lightbox="roadtrip" data-title="Car Sales c# application with charts and filtering by product and seller for countries in Europe."><img src="images/angela-project2.jpg" alt="Angela M" class="img-fluid"></a>
+                        </div>
+                        <div class="text-center text-description py-3">
+                            <h6>C# Desktop Application</h6>
+                            <p>C#, SQL Server</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4 gallery_product filter 2">
-                    <div class="photo-galery">
-                        <a href="images/angela-project2.jpg" data-lightbox="roadtrip" data-title="Car Sales c# application with charts and filtering by product and seller for countries in Europe."><img src="images/angela-project2.jpg" alt="Angela M" class="img-fluid"></a>
+                    <div class="col-12 col-md-4 gallery_product filter 3">
+                        <div class="photo-galery">
+                            <a href="images/joco1.jpg" data-lightbox="roadtrip"><img src="images/jocofix1.jpg" alt="Jovica B" class="img-fluid"></a>
+                        </div>
+                        <div class="text-center text-description py-3">
+                            <h6>Photo editing in lightroom &amp; photoshop</h6>
+                            <p>Adobe Photoshop &amp; Adobe lightroom</p>
+                        </div>
                     </div>
-                    <div class="text-center text-description py-3">
-                        <h6>Excel Dashboard</h6>
-                        <p>Excel, Macros, VBA</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 gallery_product filter 2">
-                    <div class="photo-galery">
-                        <a href="images/angela-project2.jpg" data-lightbox="roadtrip" data-title="Car Sales c# application with charts and filtering by product and seller for countries in Europe."><img src="images/angela-project2.jpg" alt="Angela M" class="img-fluid"></a>
-                    </div>
-                    <div class="text-center text-description py-3">
-                        <h6>C# Desktop Application</h6>
-                        <p>C#, SQL Server</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 gallery_product filter 3">
-                    <div class="photo-galery">
-                        <a href="images/joco1.jpg" data-lightbox="roadtrip"><img src="images/jocofix1.jpg" alt="Jovica B" class="img-fluid"></a>
-                    </div>
-                    <div class="text-center text-description py-3">
-                        <h6>Photo editing in lightroom &amp; photoshop</h6>
-                        <p>Adobe Photoshop &amp; Adobe lightroom</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 gallery_product filter 3">
-                    <div class="photo-galery">
-                        <a href="images/joco2.jpg" data-lightbox="roadtrip"><img src="images/jocofix2.jpg" alt="Jovica B" class="img-fluid"></a>
-                    </div>
-                    <div class="text-center text-description py-3">
-                        <h6>Photo editing in lightroom &amp; photoshop</h6>
-                        <p>Adobe Photoshop &amp; Adobe lightroom</p>
+                    <div class="col-12 col-md-4 gallery_product filter 3">
+                        <div class="photo-galery">
+                            <a href="images/joco2.jpg" data-lightbox="roadtrip"><img src="images/jocofix2.jpg" alt="Jovica B" class="img-fluid"></a>
+                        </div>
+                        <div class="text-center text-description py-3">
+                            <h6>Photo editing in lightroom &amp; photoshop</h6>
+                            <p>Adobe Photoshop &amp; Adobe lightroom</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="our-tech py-4">
