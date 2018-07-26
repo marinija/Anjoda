@@ -36,7 +36,8 @@ figure {
 /* ----------- Navigation --------------- */
 
 .nagivation {
-    background-image: url(../images/cover-2.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url(../images/background2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../images/background2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 0;
@@ -84,16 +85,15 @@ figure {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
-    color: #454545 !important;
+    color: #eaeaea !important;
     -webkit-transition: .2s ease;
     transition: .2s ease;
 }
 
 .navbar-nav li a:hover {
-    opacity: 0.8;
-    color: #039bff !important;
+    color: #b2b2b2 !important;
     padding-bottom: 1px;
-    border-bottom: 2px solid #03cfff;
+    border-bottom: 2px solid #b2b2b2;
 }
 
 .myarrow-down {
@@ -106,7 +106,7 @@ figure {
 }
 
 i {
-    border: solid #212121;
+    border: solid #eaeaea;
     border-width: 0 4px 4px 0;
     display: inline-block;
     padding: 3px;
