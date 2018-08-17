@@ -102,6 +102,7 @@ figure {
     background-color: transparent;
     border: none;
     border-radius: 0;
+    padding: 10px;
 }
 
 i {
